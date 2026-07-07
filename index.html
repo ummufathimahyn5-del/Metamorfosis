@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metamorfosis Kupu-Kupu (Dengan Audio & Foto)</title>
+  
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  
+  <style>
+        body { 
+            font-family: 'DM Sans', sans-serif; 
+            background: linear-gradient(to bottom right, #f0fdf4, #ccfbf1); 
+            min-height: 100vh; 
+            color: #1a1a1a; 
+        }
+        .heading-font { font-family: 'Playfair Display', serif; }
+        .canva-card { background-color: white; border-radius: 1rem; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        .speaker-btn { background-color: #059669; color: white; transition: all 0.2s; }
+        .speaker-btn:hover { background-color: #047857; }
+        .speaker-btn-stop { background-color: #ef4444; color: white; transition: all 0.2s; }
+        .speaker-btn-stop:hover { background-color: #dc2626; }
+  </style>
+ </head>
+ <body class="p-4 md:p-8">
+  
+  <header class="text-center py-10 px-4 mb-6">
+   <h1 class="heading-font text-4xl md:text-5xl mb-3 text-emerald-900 font-bold">Metamorfosis Sempurna</h1>
+   <p class="text-lg max-w-2xl mx-auto text-emerald-700">Keajaiban transformasi luar biasa dari sebutir telur kecil hingga menjadi mahakarya alam yang indah.</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto pb-16">
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+
+    <div class="canva-card w-full flex flex-col justify-between">
+     <div>
+      <a href="https://raw.githubusercontent.com/ummufathimahyn5-del/Metamorfosis/refs/heads/main/Fathimah%201.jpg" target="_blank" class="p-3 flex items-center gap-2 text-sm border-b border-gray-100 hover:bg-gray-50 text-emerald-700 font-medium">
+       <i data-lucide="external-link" class="w-4 h-4"></i> Lihat Foto Penuh
+      </a>
+      <div class="relative">
+       <img src="https://raw.githubusercontent.com/ummufathimahyn5-del/Metamorfosis/refs/heads/main/Fathimah%201.jpg" onerror="this.src='https://images.unsplash.com/photo-1576085898323-2183fa9bc353?w=600&auto=format&fit=crop&q=80'" alt="Telur Kupu-Kupu" class="w-full h-48 object-cover" loading="lazy">
+       <span class="absolute top-2 left-2 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Fase 01</span>
+      </div>
+      <div id="text-stage-1" class="p-5 pb-2">
+       <h2 class="font-bold text-lg mb-2 text-emerald-900">1. Telur (Egg)</h2>
+       <p class="text-sm leading-relaxed text-gray-600">Kupu-kupu betina meletakkan telurnya dengan hati-hati di permukaan daun agar terlindung dan menjadi sumber makanan pertama.</p>
+      </div>
+     </div>
+     <div class="p-4 pt-2">
+      <button id="btn-1" onclick="toggleSpeech('text-stage-1', 'btn-1')" class="speaker-btn w-full rounded-lg px-4 py-2 flex items-center justify-center gap-2 text-sm font-medium">
+       <i data-lucide="volume-2" class="w-4 h-4"></i> Dengarkan
+      </button>
+     </div>
+    </div>
+
+    <div class="canva-card w-full flex flex-col justify-between">
+     <div>
+      <a href="https://raw.githubusercontent.com/ummufathimahyn5-del/Metamorfosis/refs/heads/main/Fathimah%202.jpg" target="_blank" class="p-3 flex items-center gap-2 text-sm border-b border-gray-100 hover:bg-gray-50 text-emerald-700 font-medium">
+       <i data-lucide="external-link" class="w-4 h-4"></i> Lihat Foto Penuh
+      </a>
+      <div class="relative">
+       <img src="https://raw.githubusercontent.com/ummufathimahyn5-del/Metamorfosis/refs/heads/main/Fathimah%202.jpg" alt="Larva Kupu-Kupu" class="w-full h-48 object-cover" loading="lazy">
+       <span class="absolute top-2 left-2 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Fase 02</span>
+      </div>
+      <div id="text-stage-2" class="p-5 pb-2">
+       <h2 class="font-bold text-lg mb-2 text-emerald-900">2. Larva / Ulat
